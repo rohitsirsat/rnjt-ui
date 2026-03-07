@@ -1,0 +1,10 @@
+name: rnjt-ui
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=postgresro
+      - POSTGRES_PASSWORD=postgresro
+      - POSTGRES_DB=rnjt-ui
+    ports:
+      - "5431:5432"
